@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 30px;
+        position: relative;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .icon {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 24px;
+        color: #fff;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0; /* Add margin to create space between the buttons */
+    }
+
+    button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" class="icon" alt="Icon">
+        <h1>Event Database Operations</h1>
+    </header>
+<body>
+    <form action="event_page.php" method="post">
+        <button type="submit">Create</button>
+    </form>
+    <form action="view_events.php" method="post">
+        <button type="submit">Read</button>
+    </form>
+    <form action="update_event.php" method="post">
+        <button type="submit">Update</button>
+    </form>
+    <form action="delete_event.php" method="post">
+        <button type="submit">Delete</button>
+    </form>
+</body>
+</html>

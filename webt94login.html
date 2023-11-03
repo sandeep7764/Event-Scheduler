@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #4a4848;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .login-container {
+            margin: 150px auto;
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container h2 {
+            color: #333;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1607db;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background-color: #ff3d3dea;
+        }
+    </style>
+</head>
+<body>
+<div class="login-container">
+    <h2>Login to event scheduler</h2>
+    <form class="login-form" onsubmit="return validateLogin()" action="database.html" method="post">
+        <input type="text" name="username" id="username" placeholder="Username" required>
+        <br>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<script>
+    function validateLogin() {
+        var enteredUsername = document.getElementById("username").value;
+        var enteredPassword = document.getElementById("password").value;
+        if (enteredUsername === "test" && enteredPassword === "test") {
+            return true; 
+        } else {
+            alert("Invalid username or password. Please try again.");
+            return false; 
+        }
+    }
+</script>
+</body>
+</html>

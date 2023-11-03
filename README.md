@@ -1,7 +1,7 @@
 # Event-Scheduler
 **Introduction**:
 
-Our event scheduling web application provides a user-friendly platform for managing events. Users can input event details such as event name, event date, event time, and event summary, which are stored securely in a database. The application supports key functions like creating new events, viewing existing ones, updating event information, and deleting events. Additionally, there is a basic login page to ensure authorized access to the event database operations.
+Our event scheduling web application provides a user-friendly platform for managing events. Users can input event details such as event name, event date, event time, and event summary, which are stored securely in a database. The application supports key functions like creating new events, viewing existing ones, updating event information, and deleting events. Additionally, there is a basic login page to ensure authorized access to the event database operations. start the application from web94login.html
 
 **Features**:
 
